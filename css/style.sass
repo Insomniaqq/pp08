@@ -1,0 +1,754 @@
+@font-face 
+	font-family: Inter
+	src: url(../fonts/inter-v13-latin-500.woff2)
+	font-weight: 500
+	font-style: normal
+
+@font-face 
+	font-family: Inter
+	src: url(../fonts/inter-v13-latin-700.woff2)
+	font-weight: 700
+	font-style: normal
+
+@font-face 
+	font-family: Inter
+	src: url(../fonts/inter-v13-latin-900.woff2)
+	font-weight: 900
+	font-style: normal
+
+@font-face 
+	font-family: Inter
+	src: url(../fonts/inter-v13-latin-regular.woff2)
+	font-weight: 400
+	font-style: normal
+
+* 
+	box-sizing: border-box
+.header__container
+	position: absolute 
+	left: 0% 
+	top: 0% 
+	right: 0% 
+	display: flex 
+	flex-wrap: wrap  
+	align-items: center 
+	background-color: #27305AA3
+.header__logo
+	margin-left: 20px 
+.header__name 
+	margin-left: 20px 
+	color: #FFF 
+	text-decoration: none 
+	font-family: Inter 
+	font-size: 18px 
+	font-style: normal 
+	font-weight: 700 
+	line-height: normal
+	@media (max-width: 1199px)
+		span
+			width: 320px
+			height: 58px
+			flex-shrink: 0
+			font-size: 13px
+.header__nav
+	position: absolute
+	right: 100px
+.header__nav1
+	position: absolute
+	right: 829px
+.header__nav2
+	position: absolute
+	right: 829px
+.header__item 
+	margin-right: 82px 
+	padding: 0 
+	color: #FFF 
+	text-decoration: none 
+	font-family: Inter 
+	font-size: 18px 
+	font-style: normal 
+	font-weight: 700 
+	line-height: normal 
+.header__list 
+	display: flex 
+	flex-direction: row
+.header__item-list 
+	&:last-child 
+		margin-right: 0 
+.header__link 
+	font-size: 18px 
+	line-height: 24px 
+	color: white 
+	text-decoration: none 
+	@media (max-width: 1199px)
+		width: 90px
+		height: 19px
+		flex-shrink: 0
+.header__search 
+	position: absolute
+	right: 82px
+.main-section 
+	background-color: #3A4362 
+.intro 
+	background-image: url(../img/svg/background.jpg) 
+	background-size: cover 
+	background-position: center 
+	height: 830px 
+	flex-shrink: 0 
+	margin-top: -30px 
+	h1 
+		color: #FFF 
+		font-family: Inter 
+		font-size: 32px 
+		font-style: normal 
+		font-weight: 700 
+		line-height: normal 
+		width: 70% 
+		margin-left: 19px 
+		margin-top: 14px 
+	p 
+		color: #FFF 
+		font-family: Inter 
+		font-size: 24px 
+		font-style: normal 
+		font-weight: 400 
+		line-height: normal 
+		margin-left: 19px 
+		margin-top: 14px 
+.text-container 
+	border-radius: 25px 
+	background-color: #27305AA3 
+	width: 823px 
+	height: 321px 
+	position: absolute 
+	top: 177px 
+	left: 140px 
+.second-section 
+	height: 600px 
+	background-color: #3A4362 
+	background-size: cover 
+	.buttons 
+		position: absolute 
+		top: 206px 
+		left: 67px 
+		p 
+			width: 200.9px 
+			height: 33.549px 
+		img 
+			margin-top: 5px 
+			margin-left: 136px 
+	.buttons__main-btn 
+		padding-top: 13px 
+		padding-left: 10px 
+		text-align: center 
+		color: #FFF 
+		font-family: Inter 
+		font-size: 24px 
+		font-style: normal 
+		font-weight: 700 
+		line-height: normal 
+		width: 230.411px 
+		height: 52.187px 
+		flex-shrink: 0 
+		border-radius: 25px 
+		border: none 
+		background-color: #1A1F3B 
+.second-section__container 
+	padding-top: 47px 
+	position: relative 
+	margin: 0 auto 
+	max-width: 1440px
+.second-section__title
+	margin-left: 576px
+	color: #FFF
+	font-family: Inter
+	font-size: 48px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+#frame
+	margin-top: 50px
+	margin-left: 350px
+	width: 800px 
+	max-width: 100% 
+	text-align: center 
+	input[type=radio] 
+		display: none 
+	label 
+		cursor: pointer 
+		text-decoration: none 
+#slides 
+	padding: 10px 
+	position: relative 
+	z-index: 1 
+	max-width: calc(100% - 140px) 
+	margin: 0 auto 
+	.inner 
+		transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000) 
+		width: 400% 
+		line-height: 0 
+		height: 300px 
+	.frame 
+		width: 25% 
+		float: left 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		height: 100% 
+		color: #FFF
+		.frame-content
+			&__text
+				color: #FFF
+				font-family: Inter
+				font-size: 24px
+				font-style: normal
+				font-weight: 700
+				line-height: normal
+	.frame_1 
+		background-image: url(../img/svg/patron.png)
+		background-size: 640px 300px
+	.frame_2 
+		background-image: url(../img/svg/fire.png)
+		background-size: 640px 300px 
+	.frame_3 
+		background-image: url(../img/svg/prom.png)
+		background-size: 640px 300px
+#overflow 
+	width: 100% 
+	overflow: hidden 
+#frame1 
+	&:checked 
+		& ~ #slides 
+			.inner 
+				margin-left: 0 
+#frame2 
+	&:checked 
+		& ~ #slides 
+			.inner 
+				margin-left: -100% 
+#frame3 
+	&:checked 
+		& ~ #slides 
+			.inner 
+				margin-left: -200% 
+#bullets 
+	margin-top: 30px 
+	text-align: center 
+	label 
+		display: inline-block 
+		width: 10px 
+		height: 10px 
+		border-radius: 100% 
+		background: #ccc 
+		margin: 0 10px 
+#frame1:checked~#bullets label:nth-child(1), 
+#frame2:checked~#bullets label:nth-child(2), 
+#frame3:checked~#bullets label:nth-child(3) 
+	background: #444 
+ 
+.third-section
+	align-items: center
+	background-color: #3A4362
+	height: 1240px
+	&__container
+		margin: 0 auto
+		max-width: 1440px
+	&__title
+		margin-top: 50px
+		color: #FFF 
+		font-family: Inter 
+		font-size: 48px 
+		font-style: normal 
+		font-weight: 700 
+		line-height: normal 
+		width: 300px 
+		margin-left: 632px 
+.container__third-section__container
+		padding-top: 47px 
+		position: relative 
+		margin: 0 auto 
+		max-width: 1440px
+.container__text-2
+	position: absolute
+	top: 154px
+	right: 140px
+	border-radius: 25px
+	background: #2C365E
+	width: 1160px
+	height: 700px
+	flex-shrink: 0
+.container__p
+	flex-shrink: 0
+	color: #FFF
+	font-family: Inter
+	font-size: 22px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+	margin-left: 24px
+	margin-top: -14px
+	padding-top: 30px
+.container__img-1
+	position: absolute
+	top: 5px
+	right: 6px
+	width: 551.492px
+	height: 340px
+.container__img-2
+	position: absolute
+	top: 356px
+	right: 4px
+	width: 551.492px
+	height: 340px
+.footer
+	background: #313A5F
+	&__img
+		position: absolute
+		top: 34px
+		width: 64px
+		height: 64px
+		flex-shrink: 0
+	
+.footer__container 
+	padding-top: 126px 
+	position: relative 
+	margin: 0 auto 
+	max-width: 1440px
+.footer__wrapper
+	position: absolute
+	top: 34px
+	right: 717px
+	color: #FFF
+	font-family: Inter
+	font-size: 20px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+	margin-bottom: 20px
+.footer__item 
+	margin-right: 82px 
+	padding: 0 
+	color: #FFF 
+	text-decoration: none 
+	font-family: Inter 
+	font-size: 18px 
+	font-style: normal 
+	font-weight: 700 
+	line-height: normal 
+.footer__list
+	position: absolute
+	top: 61px
+	right: 91px
+	display: flex 
+	flex-wrap: wrap 
+.footer__item-list 
+	&:last-child 
+		margin-right: 0 
+.footer__link 
+	font-size: 18px 
+	line-height: 24px 
+	color: white 
+	text-decoration-line: underline
+.header__container2
+	height: 90px
+	position: absolute 
+	left: 0% 
+	top: 0% 
+	right: 0% 
+	display: flex 
+	flex-wrap: wrap 
+	justify-content: space-between 
+	align-items: center 
+	background-color:#1A1F3B
+.header__text2
+	color: #FFF
+	font-family: Inter
+	font-size: 48px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+.header__text3
+	color: #FFF
+	font-family: Inter
+	font-size: 24px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+	text-decoration: none
+.main-section2
+	height: 260px 
+	background-color: #3A4362
+	background-size: cover
+.intro2
+	margin: 0 auto
+	max-width: 1440px
+	height: 260px
+.text-container2
+	margin-left: -156px
+	margin-top: 85px
+	border-radius: 25px 
+	width: 823px 
+	height: 321px 
+	h1
+		width: 703px
+		height: 60px
+		flex-shrink: 0
+		color: #FFF
+		font-family: Inter
+		font-size: 40px
+		font-style: normal
+		font-weight: 700
+		line-height: normal
+	p 
+		width: 1025px
+		height: 156px
+		flex-shrink: 0
+		color: #FFF
+		font-family: Inter
+		font-size: 16px
+		font-style: normal
+		font-weight: 700
+		line-height: normal
+	strong
+		color: black
+
+.search-box
+	position: absolute
+	left: 297px
+	top: 22px
+	width: 842px
+	height: 54px
+	background: #D9D9D9
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+.search-txt
+	width: 842px
+	height: 54px
+	color: #969696
+	font-family: Inter
+	font-size: 24px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+.search-btn
+	position: absolute
+	top: 10px
+	left: 780px
+	margin-bottom: 20px
+	width: 36px
+	height: 36px
+	flex-shrink: 0
+.line
+	width: 99.9%
+	position: absolute
+	top: 348px
+.line2
+	width: 99.9%
+	position: absolute
+	top: 715px
+.patroni
+	position: absolute
+	top: 348px
+	right: 605px
+	color: #FFF
+	font-family: Inter
+	font-size: 48px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+.cards-item2
+	width: 260px
+	height: 260px
+	flex-shrink: 0
+	margin-left: 113px
+.footer2
+	background-color: #1A1F3B
+	height: 100px
+.footer2__container
+	display: flex
+	flex-direction: row
+	margin: 0 auto
+	max-width: 1440px
+.numbers
+	margin-left: -172px
+	color: #FFF
+	font-family: Inter
+	font-size: 24px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+.logo2
+	margin-left: 1322px
+
+.header__container3
+	height: 80px
+	position: absolute 
+	left: 0% 
+	top: 0% 
+	right: 0% 
+	display: flex 
+	flex-wrap: wrap 
+	justify-content: space-between 
+	align-items: center
+	background-color: #27305AA3
+.main-section3
+	background-color: #3A4362 
+.intro3
+	background-image: url(../img/svg/background2.png)
+	background-size: cover 
+	background-position: center 
+	height: 830px 
+	flex-shrink: 0 
+	margin-top: -30px  
+.text-container3
+	max-width: 1440px
+	border-radius: 25px 
+	background-color: #27305AA3 
+	width: 797px
+	height: 450px
+	position: absolute 
+	top: 177px 
+	left: 140px
+	h1 
+		color: #FFF
+		font-family: Inter
+		font-size: 24px
+		font-style: normal
+		font-weight: 400
+		line-height: normal
+		margin-left: 41px
+.p1
+	color: #FFF
+	font-family: Inter
+	font-size: 24px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	margin-left: 41px
+.p2
+	color: #FFF
+	font-family: Inter
+	font-size: 24px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	margin-left: 41px
+.p3
+	color: #FFF
+	font-family: Inter
+	font-size: 24px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	margin-left: 41px
+.feedback
+	background-color: #3A4362
+	height: 674px
+.feedback-container
+	position: relative
+	max-width: 1440px
+	height: 674px
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	&__title
+		color: #FFF
+		font-family: Inter
+		font-size: 40px
+		font-style: normal
+		font-weight: 700
+		line-height: normal
+		padding-top: 54px
+	&__button
+		padding-top: 11px
+		padding-left: 24px
+		text-decoration: none
+		margin-top: 25px
+		width: 172.646px
+		height: 52px
+		border-radius: 25px
+		border: 1px solid #FFF
+		background: rgba(181, 176, 176, 0.60)
+		color: #000
+		font-family: Inter
+		font-size: 24px
+		font-style: normal
+		font-weight: 700
+		line-height: normal
+		line-height: normal
+		border: none
+	&__area
+		margin-top: 31px
+		width: 866px
+		height: 158px
+		border-radius: 15px
+		background: rgba(181, 176, 176, 0.60)
+		color: #000
+		font-family: Inter
+		font-size: 24px
+		font-style: normal
+		font-weight: 700
+		line-height: normal
+		text-indent: 25px
+		padding-top: 10px
+	&__area:placeholder
+		color: #000
+		font-family: Inter
+		font-size: 24px
+		font-style: normal
+		font-weight: 100
+		line-height: normal
+
+.form
+	width: 866px
+	height: 250px
+	display: flex
+	flex-direction: row
+	&__first-wrapper
+		margin-right: 72px
+	&__row
+	input
+		margin-top: 22px
+		width: 397px
+		height: 54px
+		border-radius: 15px
+		background: #D9D9D9
+		box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset
+		text-indent: 25px
+		font-family: Inter
+		font-size: 24px
+		font-style: normal
+		font-weight: 100
+		line-height: normal
+input::placeholder
+	color: #000
+	font-family: Inter
+	font-size: 16px
+	font-style: normal
+	font-weight: 100
+	line-height: normal
+
+.kupit-section 
+	height: 600px 
+	background-color: #3A4362 
+	background-size: cover 
+	.buttons 
+		position: absolute 
+		top: 206px 
+		left: 67px 
+		p 
+			width: 200.9px 
+			height: 33.549px 
+		img 
+			margin-top: 5px 
+			margin-left: 136px 
+	.buttons__main-btn 
+		padding-top: 13px 
+		padding-left: 10px 
+		text-align: center 
+		color: #FFF 
+		font-family: Inter 
+		font-size: 24px 
+		font-style: normal 
+		font-weight: 700 
+		line-height: normal 
+		width: 230.411px 
+		height: 52.187px 
+		flex-shrink: 0 
+		border-radius: 25px 
+		border: none 
+		background-color: #1A1F3B 
+.kupit-section__container 
+	padding-top: 47px 
+	position: relative 
+	margin: 0 auto 
+	max-width: 1440px
+.kupit-section__cards-box 
+	display: inline-flex 
+	margin-left: 40px 
+	margin-top: 38px 
+.kupit-section__cards-item2
+	position: relative 
+	width: 367px 
+	border-radius: 20px 
+	margin-top: 12px 
+	margin-right: -100px 
+	.cards-item2__img
+		border-radius: 0px 0px 20px 20px 
+		width: 367px 
+	.cards-item2__text 
+		color: #FFF 
+		font-family: Inter 
+		font-size: 24px 
+		font-style: normal 
+		font-weight: 700 
+		line-height: normal 
+		width: 200.9px 
+		height: 33.549px 
+		flex-shrink: 0
+@media (max-width: 1199px)
+	.header__container
+		width: auto
+	.header__logo
+		top: 20px
+		img
+			width: 32px
+			height: 47px
+	.header__nav
+		width: 74px
+		height: 19px
+		flex-shrink: 0
+		flex-direction: row
+	.header__item
+		width: -32px
+		height: 19px
+		flex-shrink: 0
+		flex-direction: row
+		a
+			font-size: 16px
+	.header__list
+		position: absolute
+		right: 359px
+		width: 200px
+		flex-shrink: 0
+		font-size: 13px
+		flex-direction: row
+	.header__search
+		margin-right: 38px
+		img
+			width: 30px
+			height: 30px
+	.main-section
+		min-height: 673px
+	.text-container
+		margin-left: -60px
+	.second-section
+		.container
+			width: 960px
+		&__title
+			margin-left: 370px
+	#frame
+		margin-left: 110px
+	.third-section
+		height: 991px
+		&__title
+			width: 230px
+			margin-left: 418px
+	.container__text-2
+		width: 710px
+		height: 488px
+		img
+			width: 283px
+			height: 172px
+		.container__img-2
+			top: 300px
+			right: 6px
+	.container__p
+		font-size: 15px
+	.footer
+		height: 190px
+		&__wrapper
+			width: 300px
+			height: 50px
+			position: absolute
+			left: 87px
+			font-size: 15px
