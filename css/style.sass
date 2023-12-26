@@ -50,6 +50,12 @@
 			height: 58px
 			flex-shrink: 0
 			font-size: 13px
+
+	@media (max-width: 575px)
+		span
+			width: 92px
+			font-size: 6px
+
 .header__nav
 	position: absolute
 	right: 100px
@@ -207,12 +213,31 @@
 	.frame_1 
 		background-image: url(../img/svg/patron.png)
 		background-size: 640px 300px
+		@media ( max-width: 991px )
+			background-size: 563px 300px
+		@media ( max-width: 767px )
+			background-size: 441px 300px
+		@media ( max-width: 575px )
+			background-size: 360px 300px	
 	.frame_2 
 		background-image: url(../img/svg/fire.png)
-		background-size: 640px 300px 
+		background-size: 640px 300px
+		@media ( max-width: 991px )
+			background-size: 563px 300px
+		@media ( max-width: 767px )
+			background-size: 441px 300px
+		@media ( max-width: 575px )
+			background-size: 360px 300px
 	.frame_3 
 		background-image: url(../img/svg/prom.png)
 		background-size: 640px 300px
+		@media ( max-width: 991px )
+			background-size: 563px 300px
+		@media ( max-width: 767px )
+			background-size: 441px 300px
+		@media ( max-width: 575px )
+			background-size: 360px 300px
+		
 #overflow 
 	width: 100% 
 	overflow: hidden 
@@ -685,6 +710,8 @@ input::placeholder
 		width: 200.9px 
 		height: 33.549px 
 		flex-shrink: 0
+
+/* Адаптив */
 @media (max-width: 1199px)
 	.header__container
 		width: auto
@@ -707,7 +734,7 @@ input::placeholder
 			font-size: 16px
 	.header__list
 		position: absolute
-		right: 359px
+		right: 291px
 		width: 200px
 		flex-shrink: 0
 		font-size: 13px
@@ -752,3 +779,292 @@ input::placeholder
 			position: absolute
 			left: 87px
 			font-size: 15px
+
+@media (max-width: 991px)
+	.header__container
+		width: auto
+	.header__logo
+		top: 20px
+		img
+			width: 32px
+			height: 47px
+	.header__nav
+		width: 74px
+		height: 19px
+		flex-shrink: 0
+		flex-direction: row
+	.header__item
+		width: -32px
+		height: 19px
+		flex-shrink: 0
+		flex-direction: row
+		a
+			font-size: 11px
+	.header__list
+		position: absolute
+		right: 120px
+		width: 200px
+		flex-shrink: 0
+		font-size: 13px
+		flex-direction: row
+	.header__search
+		margin-right: -52px
+		img
+			width: 30px
+			height: 30px
+	.main-section
+		min-height: 673px
+	.text-container
+		margin-left: -60px
+		width: 645px
+		p
+			font-size: 18px
+	.second-section
+		.container
+			width: 720px
+		&__title
+			margin-left: 218px
+	#frame
+		margin-left: 1px
+	.third-section
+		height: 991px
+		&__title
+			width: 230px
+			margin-left: 418px
+	.container__text-2
+		width: 710px
+		height: 488px
+		img
+			width: 283px
+			height: 172px
+		.container__img-2
+			top: 300px
+			right: 6px
+	.container__p
+		font-size: 15px
+	.footer
+		height: 190px
+		&__wrapper
+			width: 300px
+			height: 50px
+			position: absolute
+			left: 87px
+			font-size: 15px
+
+@media (max-width: 767px)
+	.header__container
+		align-items: center
+		width: auto
+		height: 40px
+	.header__logo
+		top: 20px
+		img
+			width: 18px
+			height: 27px
+	.header__nav
+		width: 50px
+		height: 36px
+	.header__item
+		width: -32px
+		height: 19px
+		a
+			font-size: 8px
+	.header__list
+		position: absolute
+		right: 28px
+		width: 200px
+		font-size: 20px
+	.header__search
+		margin-right: -72px
+		img
+			width: 14px
+			height: 14px
+	.main-section
+		width: auto
+		height: 245px
+		flex-shrink: 0
+	.text-container
+		margin-top: -93px
+		width: 393px
+		height: 232px
+		flex-shrink: 0
+		margin-left: -70px
+	.intro
+		height: 386px
+		h1
+			width: 223px
+			height: 72px
+			flex-shrink: 0
+			font-size: 20px
+		p
+			width: 311px
+			height: 72px
+			flex-shrink: 0
+			font-size: 16px
+			position: absolute
+			top: 20px
+		
+	.second-section
+		width: auto
+		height: 245px
+		.container
+			width: 681px
+		&__title
+			margin-left: 302px
+			margin-top: -313px
+			font-size: 16px
+	#frame
+		width: 600px
+		margin-left: 53px
+	.third-section
+		height: 277px
+		&__title
+			margin-left: 356px
+			margin-top: -96px
+			font-size: 16px
+	.container__text-2
+		position: absolute
+		left: 200px
+		top: -5px
+		width: 395px
+		height: 192px
+		img
+			width: 180px
+			height: 88px
+		.container__img-2
+			top: 98px
+			right: 6px
+	.container__p
+		width: 231px
+		font-size: 6px
+	.footer
+		height: 190px
+		&__img
+			position: absolute
+			top: 59px
+			left: 20px
+			width: 30px
+			height: 30px
+			flex-shrink: 0
+		&__wrapper
+			width: 158px
+			height: 50px
+			position: absolute
+			left: 59px
+			top: 47px
+			font-size: 10px
+		&__link
+			margin-right: 10px
+			font-size: 8px
+
+@media (max-width: 575px)
+	.header__container
+		align-items: center
+		width: auto
+		height: 59px
+	.header__logo
+		top: 20px
+		img
+			width: 18px
+			height: 27px
+	.header__name
+		display: flex
+		position: absolute
+		top: 16px
+		left: 28px
+	.header__nav
+		width: 50px
+		height: 19px
+	.header__item
+		width: -32px
+		height: 19px
+		a
+			font-size: 9px
+	.header__list
+		position: absolute
+		right: 70px
+		width: 200px
+		font-size: 12px
+	.header__search
+		margin-right: -72px
+		img
+			width: 14px
+			height: 14px
+	.main-section
+		width: auto
+		height: 245px
+		flex-shrink: 0
+	.text-container
+		width: 248px
+		height: 130.522px
+		flex-shrink: 0
+		margin-left: -70px
+	.intro
+		height: 386px
+		h1
+			width: 223px
+			height: 72px
+			flex-shrink: 0
+			font-size: 13px
+		p
+			width: 223px
+			height: 72px
+			flex-shrink: 0
+			font-size: 8px
+			position: absolute
+			top: 20px
+		
+	.second-section
+		width: auto
+		height: 245px
+		.container
+			width: 100%
+		&__title
+			margin-left: 244px
+			margin-top: -327px
+			font-size: 16px
+			width: 150px
+	#frame
+		width: 520px
+		margin-left: 14px
+	.third-section
+		height: 277px
+		&__title
+			margin-left: 253px
+			margin-top: -96px
+			font-size: 16px
+	.container__text-2
+		position: absolute
+		left: 95px
+		top: -20px
+		width: 400px
+		height: 201px
+		img
+			width: 127px
+			height: 78px
+		.container__img-2
+			top: 98px
+			right: 6px
+	.container__p
+		width: 231px
+		font-size: 6px
+	.footer
+		height: 127px
+		&__img
+			position: absolute
+			top: 59px
+			left: 20px
+			width: 30px
+			height: 30px
+			flex-shrink: 0
+		&__wrapper
+			width: 158px
+			height: 50px
+			position: absolute
+			left: 59px
+			top: 47px
+			font-size: 10px
+		&__link
+			margin-right: 10px
+			font-size: 8px
+	
